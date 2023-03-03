@@ -1,0 +1,12 @@
+{
+  "singleQuote": true,
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": ["src/assets/**/*.css", "src/assets/**/*.scss", "src/assets/**/*.sass"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
