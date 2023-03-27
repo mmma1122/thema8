@@ -1,0 +1,72 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-table {
+  letter-spacing: 0.04em;
+  &.u-width--03 {
+    margin-top: 42px;
+    @include mq {
+      margin-top: 20px;
+    }
+  }
+  &__row {
+    display: block;
+    padding: 70px 0;
+    border-top: 2px solid $color-main;
+    @include mq {
+      padding: 30px 0;
+      margin: 0 10px;
+    }
+    &:last-of-type {
+      border-bottom: 2px solid $color-main;
+    }
+  }
+  &__heading {
+    width: 200px;
+    height: fit-content;
+    padding-left: 35px;
+    box-sizing: content-box;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: normal;
+    position: relative;
+    z-index: $z-contents;
+    @include mq {
+      width: 103px;
+      padding-left: 20px;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    &::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background-color: $color-accent-yellow;
+      border-radius: 100%;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      z-index: -1;
+      @include mq {
+        width: 50px;
+        height: 50px;
+        top: -14px;
+      }
+    }
+  }
+  &__data {
+    padding-left: 100px;
+    font-weight: 500;
+    line-height: 2;
+    @include mq {
+      padding-left: 17px;
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+    a {
+      display: inline;
+      vertical-align: -webkit-baseline-middle;
+      color: $color-main;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-lower-hero {
+  margin-top: 32px;
+  background-color: $color-main;
+  border-radius: 0 80px 0 0;
+  z-index: 1;
+  @include mq {
+    margin-top: 18px;
+    margin-bottom: -75px;
+    border-radius: 0 40px 0 0;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @include mq {
+      display: block;
+    }
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 65px 0;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: $z-contents;
+    @include mq {
+      min-height: 136px;
+      padding: 20px 30px 0;
+    }
+    &__ja {
+      font-size: 3.2rem;
+      line-height: normal;
+      letter-spacing: 0.1em;
+      @include mq {
+        font-size: 1.5rem;
+      }
+    }
+    &__en {
+      font-size: 12rem;
+      line-height: normal;
+      @include mq {
+        padding-top: 5px;
+        font-size: 5.5rem;
+        line-height: 0.9;
+      }
+    }
+  }
+  &__image {
+    font-size: 0;
+    overflow: hidden;
+    img {
+      width: 520px;
+      height: 520px;
+      object-fit: cover;
+      // object-position: center center;
+      border: 20px solid white;
+      border-radius: 100%;
+      position: absolute;
+      top: -107px;
+      right: 0;
+      @include mq {
+        width: 84vw;
+        height: 84vw;
+        border: 8px solid white;
+        position: relative;
+        top: 0;
+        left: 50%;
+        translate: -50% 0 0;
+      }
+    }
+  }
+  &__decoration {
+    width: 103px;
+    height: 103px;
+    background-color: $color-accent-yellow;
+    border-radius: 100%;
+    position: absolute;
+    top: -65px;
+    right: 390px;
+    z-index: 3;
+    &::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      background-color: $color-sub;
+      border-radius: 100%;
+      position: absolute;
+      top: 13px;
+      left: -9px;
+    }
+    @include mq {
+      width: 13.6vw;
+      height: 13.6vw;
+      top: 50.26vw;
+      left: 10.2vw;
+      &::before {
+        width: 3.55vw;
+        height: 3.55vw;
+        top: 1.53vw;
+        left: -1.42vw;
+      }
+    }
+  }
+}

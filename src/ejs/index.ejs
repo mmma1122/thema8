@@ -1,10 +1,230 @@
 <%_
-  var pageName = "home";
-  var data = data;
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
 _%>
-<%- include("./_components/_head", { pageName, data }) _%>
-<%- include("./_components/_header", { pageName, data }) _%>
-  <main>
-  </main>
-<%- include("./_components/_footer", { pageName, data }) _%>
-<%- include("./_components/_foot", { pageName, data }) _%>
+<%- include("./_components/_head", { rootPath, pageData }) _%>
+<%- include("./_components/_header", { rootPath, pageData }) _%>
+      <main>
+        <section class="p-index-mv">
+          <div class="p-index-mv__innner">
+            <div class="p-index-mv__title">
+              <span>RECRUITING2023</span>
+              <h1>RECRUIT<br>COPY</h1>
+            </div>
+            <div class="p-index-mv__image">
+              <div class="p-index-mv__decoration-left"></div>
+              <picture>
+                <source srcset="<%- rootPath %>/assets/img/index/mv-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/mv-image.png" alt="" >
+              </picture>
+              <div class="p-index-mv__decoration-right"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-index-recruit-message">
+          <div class="c-decoration--left --index-recruit-message"></div>
+          <div class="p-index-recruit-message__inner u-width--03">
+            <h2 class="c-index-heading--en --recruit-message">RECRUIT<br>MESSAGE</h2>
+            <p class="p-index-recruit-message__content">こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストが入りますこちらにテキストが入ります。<br>
+              こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストがはいります。</p>
+          </div>
+          <div class="c-decoration--right --index-recruit-message"></div>
+        </section>
+
+        <section class="p-index-top-message l-section">
+          <div class="l-section__inner">
+            <h2 class="p-index-top-message__heading">
+              <span class="c-index-heading--jp">代表メッセージ</span><br>
+              <span class="c-index-heading--en">TOP MESSAGE</span>
+            </h2>
+            <div class="p-index-top-message__content u-width--05">
+              <picture class="p-index-top-message__image">
+                <source srcset="<%- rootPath %>/assets/img/index/top-message-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/top-message-image.png" alt="" >
+              </picture>
+              <div class="p-index-top-message__text">
+                <h3 class="p-index-top-message__lead">人と<br>仕事をつなぐ。</h3>
+                <p class="c-text">
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+                </p>
+                <button class="c-button"><a href="<%- rootPath %>/topmessage/">VIEW MORE<span></span></a></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-index-business l-section">
+          <div class="c-decoration--left --index-business"></div>
+          <div class="l-section__inner">
+            <div class="p-index-business__content">
+              <h2 class="p-index-business__heading">
+                <span class="c-index-heading--jp">仕事を知る</span><br>
+                <span class="c-index-heading--en">BUSINESS</span></h2>
+              <p class="c-text --white">
+                こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストがはいります。
+              </p>
+            </div>
+            <div class="p-index-business__content--list">
+              <ul class="p-index-business__list">
+                <li class="p-index-business__list__item"><a href="<%- rootPath %>/business/sale/">SALES<br><span>営業部</span></a></li>
+                <li class="p-index-business__list__item"><a href="<%- rootPath %>/business/management/">MANAGEMENT<br><span>管理部</span></a></li>
+                <li class="p-index-business__list__item"><a href="<%- rootPath %>/business/planning/">PLANNING<br><span>企画部</span></a></li>
+              </ul>
+              <button class="c-button --center"><a href="<%- rootPath %>/business/">VIEW MORE<span></span></a></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-index-section l-section">
+          <div class="c-decoration--right --index-section"></div>
+          <div class="p-index-section__content l-section__inner">
+            <div class="u-width--04">
+              <div class="p-index-section__text">
+                <h2 class="c-index-heading">
+                  <span class="c-index-heading--jp">会社概要</span><br>
+                  <span class="c-index-heading--en">COMPANY</span>
+                </h2>
+                <p class="c-text">
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+                </p>
+              </div>
+              <picture class="p-index-section__image">
+                <source srcset="<%- rootPath %>/assets/img/index/company-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/company-image.png" alt="" >
+              </picture>
+              <button class="c-button"><a href="<%- rootPath %>/company/">VIEW MORE<span></span></a></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-index-section--orange l-section">
+          <div class="p-index-section__content l-section__inner">
+            <div class="u-width--04">
+              <div class="p-index-section__text --orange">
+                <h2 class="c-index-heading">
+                  <span class="c-index-heading--jp">数字を見る</span><br>
+                  <span class="c-index-heading--en">INFO<br>GRAPHICS</span>
+                </h2>
+                <p class="c-text --white">
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+                </p>
+              </div>
+              <picture class="p-index-section__image --orange">
+                <source srcset="<%- rootPath %>/assets/img/index/infographics-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/infographics-image.png" alt="" >
+              </picture>
+              <button class=" p-index-section__button c-button--orange"><a href="<%- rootPath %>/infographics/">VIEW MORE<span></span></a></button>
+            </div>
+          </div>
+          <div class=" c-decoration--left --index-section"></div>
+        </section>
+
+        <section class="p-index-employee l-section">
+          <div class="l-section__inner">
+            <div class="p-index-employee__content u-width--03">
+              <h2 class="p-index-employee__heading">
+                <span class="c-index-heading--jp">社員紹介</span><br>
+                <span class="c-index-heading--en">EMPLOYEE</span>
+              </h2>
+              <p class="c-text">
+                こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいります。
+              </p>
+            </div>
+            <ul class="p-index-employee__carousel js-slick-wrapper">
+              <li class="p-index-employee__card">
+                <a href="<%- rootPath %>/employee/01/">
+                  <picture>
+                    <source srcset="<%- rootPath %>/assets/img/index/employee-image01.webp" type="image/webp">
+                    <img src="<%- rootPath %>/assets/img/index/employee-image01.png" alt="" >
+                  </picture>
+                  <div class="p-index-employee__personal" data-num="01">
+                    <p class="p-index-employee__name">YAMADA<br>HANAKO<br><span>山田 花子</span></p>
+                    <p class="p-index-employee__department">2022年入社<br>クリエイティブ制作部</p>
+                  </div>
+                </a>
+              </li>
+              <li class="p-index-employee__card">
+                <a href="<%- rootPath %>/employee/02/">
+                  <picture>
+                    <source srcset="<%- rootPath %>/assets/img/index/employee-image02.webp" type="image/webp">
+                    <img src="<%- rootPath %>/assets/img/index/employee-image02.png" alt="" >
+                  </picture>
+                  <div class="p-index-employee__personal" data-num="02">
+                    <p class="p-index-employee__name" >TANAKA<br>TAROU<br><span>田中 太郎</span></p>
+                    <p class="p-index-employee__department">2022年入社<br>クリエイティブ制作部</p>
+                  </div>
+                </a>
+              </li>
+              <li class="p-index-employee__card">
+                <a href="<%- rootPath %>/employee/03/">
+                  <picture>
+                    <source srcset="<%- rootPath %>/assets/img/index/employee-image03.webp" type="image/webp">
+                    <img src="<%- rootPath %>/assets/img/index/employee-image03.png" alt="" >
+                  </picture>
+                  <div class="p-index-employee__personal" data-num="03">
+                    <p class="p-index-employee__name">SUZUKI<br>HANAKO<br><span>鈴木 花子</span></p>
+                    <p class="p-index-employee__department">2022年入社<br>クリエイティブ制作部</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="c-button --center"><a href="<%- rootPath %>/employee/">VIEW MORE<span></span></a></button>
+          </div>
+        </section>
+
+        <section class="p-index-section l-section">
+          <div class="c-decoration--right --index-section"></div>
+          <div class="p-index-section__content l-section__inner">
+            <div class="u-width--04">
+              <div class="p-index-section__text">
+                <h2 class="c-index-heading">
+                  <span class="c-index-heading--jp">教育研修制度</span><br>
+                  <span class="c-index-heading--en">SUPPORT</span>
+                </h2>
+                <p class="c-text">
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+                </p>
+              </div>
+              <picture class="p-index-section__image">
+                <source srcset="<%- rootPath %>/assets/img/index/support-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/support-image.png" alt="" >
+              </picture>
+              <button class="c-button"><a href="<%- rootPath %>/support/">VIEW MORE<span></span></a></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-index-section--orange l-section">
+          <div class="p-index-section__content l-section__inner">
+            <div class="u-width--04">
+              <div class="p-index-section__text --orange">
+                <h2 class="c-index-heading">
+                  <span class="c-index-heading--jp">数字を見る</span><br>
+                  <span class="c-index-heading--en">BENEFIT</span>
+                </h2>
+                <p class="c-text --white">
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+                  こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+                </p>
+              </div>
+              <picture class="p-index-section__image --orange">
+                <source srcset="<%- rootPath %>/assets/img/index/benefit-image.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/index/benefit-image.png" alt="" >
+              </picture>
+              <button class=" p-index-section__button c-button--orange"><a href="<%- rootPath %>/benefit/">VIEW MORE<span></span></a></button>
+            </div>
+          </div>
+          <div class=" c-decoration--left --index-section"></div>
+        </section>
+
+      </main>
+  <%- include("./_components/_recruit", { rootPath, pageData }) _%>
+<%- include("./_components/_footer", { rootPath, pageData }) _%>
+<%- include("./_components/_foot", { rootPath, pageData }) _%>

@@ -1,0 +1,46 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-breadcrumbs {
+  display: flex;
+  justify-content: left;
+  padding: 19px $line-width01;
+  background-color: #fff7dd;
+  position: relative;
+  z-index: 2;
+  @include mq {
+    padding: 10px;
+  }
+  &__list {
+    font-size: 1.4rem;
+    line-height: normal;
+    padding-right: 5px;
+    a {
+      color: $color-main;
+    }
+    @include mq {
+      font-size: 1.1rem;
+    }
+    & + & {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid $color-main;
+        border-right: 3px solid $color-main;
+        margin-right: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+        rotate: 45deg;
+        @include mq {
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid $color-main;
+          border-right: 2px solid $color-main;
+        }
+      }
+    }
+  }
+}

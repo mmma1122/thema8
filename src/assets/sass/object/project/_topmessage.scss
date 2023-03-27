@@ -1,0 +1,95 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-topmessage {
+  margin-top: 200px;
+  padding: 200px 0;
+  background-color: $color-main;
+  @include mq {
+    margin-top: 100px;
+    padding: 100px 0;
+  }
+  &__inner {
+    margin: 0;
+    position: relative;
+  }
+  &__content {
+    width: 32.03vw;
+    position: relative;
+    top: 10px;
+    left: 57.7vw;
+    @include mq {
+      width: 100%;
+      height: auto;
+      left: 0;
+    }
+  }
+  &__image {
+    font-size: 0;
+    img {
+      width: 50.78vw;
+      height: 35.89vw;
+      object-fit: cover;
+      object-position: center center;
+      border: 10px solid white;
+      border-radius: 0 40px 40px 0;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include mq {
+        display: block;
+        width: calc(100% - 10px);
+        height: auto;
+        margin-top: 30px;
+        border: 8px solid white;
+        border-radius: 0 20px 20px 0;
+        position: relative;
+      }
+    }
+  }
+  &__personal {
+    padding-top: 100px;
+    position: relative;
+    z-index: $z-contents;
+    @include mq {
+      padding-top: 50px;
+    }
+    &::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: $color-accent-yellow;
+      border-radius: 100%;
+      position: absolute;
+      top: 8px;
+      right: -115px;
+      z-index: $z-bg;
+      @include mq {
+        width: 100px;
+        height: 100px;
+        top: 6px;
+        right: 10px;
+      }
+    }
+  }
+  &__department {
+    text-align: right;
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: normal;
+    position: relative;
+    z-index: $z-contents;
+    @include mq {
+      font-size: 1.5rem;
+      padding-right: 30px;
+    }
+  }
+  &__name {
+    @extend .p-topmessage__department;
+    font-size: 5rem;
+    @include mq {
+      font-size: 2.7rem;
+    }
+  }
+}

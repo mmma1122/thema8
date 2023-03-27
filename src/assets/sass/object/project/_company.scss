@@ -1,0 +1,79 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-company {
+  &__access__content {
+    display: flex;
+    justify-content: left;
+    padding-top: 42px;
+    @include mq {
+      display: block;
+      justify-content: center;
+    }
+  }
+  &__map {
+    @include mq {
+      width: 100%;
+      display: block;
+      padding: 0 10px;
+      font-size: 0;
+    }
+    iframe {
+      width: 37.5vw;
+      height: 23.4375vw;
+      object-fit: cover;
+      @include mq {
+        width: 100%;
+        height: 60vw;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &__access__description {
+    padding-left: 50px;
+    @include mq {
+      padding-left: 0;
+    }
+  }
+  &__difinition-team {
+    padding-bottom: 11px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: normal;
+    color: $color-main;
+    &:not(:first-of-type) {
+      padding-top: 30px;
+    }
+    @include mq {
+      font-size: 1.7rem;
+      padding: 20px 0 11px 10px;
+    }
+  }
+  &__difinition-data {
+    line-height: 1.4;
+    @include mq {
+      font-size: 1.4rem;
+      padding-left: 10px;
+    }
+    &--dots {
+      padding-left: 20px;
+      letter-spacing: 0.05em;
+      position: relative;
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $color-main;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        translate: 0 -50% 0;
+      }
+      @include mq {
+        font-size: 1.4rem;
+        margin-left: 10px;
+      }
+    }
+  }
+}

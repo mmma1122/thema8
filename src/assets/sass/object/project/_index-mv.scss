@@ -1,0 +1,131 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-mv {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: $z-contents;
+    @include mq {
+      display: block;
+    }
+  }
+  &__title {
+    width: 50vw;
+    padding: 7.76vw 0 4.5vw 1.04vw;
+    color: $color-main;
+    font-family: "Urbanist";
+    line-height: 0.95;
+    position: relative;
+    z-index: 3;
+    @include mq {
+      width: 100%;
+      padding: 2.13vw 0 52.53vw 10px;
+    }
+    span {
+      display: block;
+      padding-left: 10px;
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      @include mq {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        padding-left: 3px;
+      }
+    }
+    h1 {
+      font-size: 23rem;
+      font-weight: 800;
+      z-index: 3;
+      box-sizing: border-box;
+      @include mq {
+        font-size: 7.5rem;
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    top: -4.01vw;
+    right: 0;
+    z-index: 2;
+    font-size: 0;
+    img {
+      width: 57.8vw;
+      height: 57.8vw;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 100%;
+      border: 20px solid $color-main;
+    }
+    @include mq {
+      top: 75px;
+      left: 2.67vw;
+      img {
+        width: 94.26666666666667vw;
+        height: 94.26666666666667vw;
+        border: 8px solid $color-main;
+      }
+    }
+  }
+  &__decoration-left {
+    display: block;
+    width: 9.375vw;
+    height: 9.375vw;
+    border-radius: 100%;
+    background-color: $color-accent-yellow;
+    position: absolute;
+    top: 2.26vw;
+    left: 5.13vw;
+    @include mq {
+      display: none;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 2.44vw;
+      height: 2.44vw;
+      border-radius: 100%;
+      background-color: $color-sub;
+      position: absolute;
+      top: 1.36vw;
+      left: -0.66vw;
+    }
+  }
+  &__decoration-right {
+    display: block;
+    width: 8.23vw;
+    height: 8.23vw;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 6.98vw;
+    right: 2.55vw;
+    @include mq {
+      width: 16vw;
+      height: 16vw;
+      right: 7.73vw;
+      bottom: 9.33vw;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 2.44vw;
+      height: 2.44vw;
+      border-radius: 100%;
+      background-color: $color-accent-yellow;
+      position: absolute;
+      bottom: -3.17vw;
+      right: 4.74vw;
+      @include mq {
+        width: 4.8vw;
+        height: 4.8vw;
+        right: initial;
+        bottom: -6.22vw;
+        left: 2.053vw;
+      }
+    }
+  }
+}

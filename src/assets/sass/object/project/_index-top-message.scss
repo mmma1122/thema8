@@ -1,0 +1,57 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-top-message {
+  padding-top: 180px;
+  color: $color-main;
+  @include mq {
+    padding-top: 100px;
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    @include mq {
+      display: block;
+      padding-top: 30px;
+    }
+  }
+  &__lead {
+    padding: 67px 0 42px;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1.4;
+    @include mq {
+      padding: 0 10px 20px;
+      font-size: 3.5rem;
+    }
+  }
+  &__image {
+    font-size: 0;
+    img {
+      width: 50.78vw;
+      height: 34.89vw;
+      object-fit: cover;
+      object-position: center center;
+      border: 10px solid $color-main;
+      border-radius: 0 40px 40px 0;
+      box-sizing: border-box;
+      @include mq {
+        width: calc(100% - 10px);
+        height: 66.93vw;
+        border: 8px solid $color-main;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+  &__text {
+    width: 34.11vw;
+    @include mq {
+      width: 100%;
+      padding: 20px 0 0;
+    }
+  }
+}

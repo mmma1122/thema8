@@ -1,0 +1,263 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.infographics;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { rootPath, pageData }) _%>
+  <main>
+    <div class="c-lower-hero">
+      <div class="c-lower-hero__inner u-width--04">
+        <div class="c-decoration--left --lower-hero"></div>
+        <h1 class="c-lower-hero__heading">
+          <div class="c-lower-hero__heading__ja">数字で見る</div>
+          <div class="c-lower-hero__heading__en">INFO<br class="u-br--lg">GRAPHICS</div>
+        </h1>
+        <picture class="c-lower-hero__image">
+          <div class="c-lower-hero__decoration"></div>
+          <source srcset="<%- rootPath %>/assets/img/infographics/hero.webp" type="image/webp">
+          <img src="<%- rootPath %>/assets/img/infographics/hero.png" alt="">
+        </picture>
+      </div>
+    </div>
+
+    <nav>
+      <ol class="c-breadcrumbs">
+        <li class="c-breadcrumbs__list"><a href="<%- rootPath %>/">ホーム</a></li>
+        <li class="c-breadcrumbs__list">数字で見る</li>
+      </ol>
+    </nav>
+
+    <section class="l-section --white u-width--04">
+      <div class="l-section__inner">
+        <div class="p-infog__card">
+          <h3 class="p-infog__heading">売上高推移</h3>
+          <div class="p-infog__bar-graph u-width--03">
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data">5<span>億</span></div>
+              <div class="p-infog__bar --5"></div>
+              <div class="p-infog__bar__year">2017</div>
+            </div>
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data">10<span>億</span></div>
+              <div class="p-infog__bar --10"></div>
+              <div class="p-infog__bar__year">2018</div>
+            </div>
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data">15<span>億</span></div>
+              <div class="p-infog__bar --15"></div>
+              <div class="p-infog__bar__year">2019</div>
+            </div>
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data">20<span>億</span></div>
+              <div class="p-infog__bar --20"></div>
+              <div class="p-infog__bar__year">2020</div>
+            </div>
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data">25<span>億</span></div>
+              <div class="p-infog__bar --25"></div>
+              <div class="p-infog__bar__year">2021</div>
+            </div>
+            <div class="p-infog__bar-container">
+              <div class="p-infog__bar__data --30">30<span>億</span></div>
+              <div class="p-infog__bar --30"></div>
+              <div class="p-infog__bar__year">2022</div>
+            </div>
+          </div>
+          <p class="p-infog__description">6年連続で成長しています</p>
+        </div>
+        <div class="p-infog__grid-container">
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">従業員数</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/employee-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/employee-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">329<span>人</span></div>
+            </div>
+            <p class="p-infog__description">例年約5名ほどの新卒社員を迎えています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">平均年齢</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/average-age-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/average-age-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">27<div class="p-infog__small-number">.5</div><span>歳</span></div>
+            </div>
+            <p class="p-infog__description">20代・30代が多く活躍しています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">男女比</h3>
+            <div class="p-infog__content --pie">
+              <div class="p-infog__pie--gender">
+                <div class="p-infog__label">
+                  <p>女性</p>
+                  <p>男性</p>
+                </div>
+              </div>
+              <div class="p-infog__data--pie">男性<span>47</span>％<br>女性<span>53</span>％</div>
+            </div>
+            <p class="p-infog__description --pie">おおよそ半々の比率です</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">平均残業時間</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/overtime-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/overtime-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">6<div class="p-infog__small-number">.5</div><span>時間</span></div>
+            </div>
+            <p class="p-infog__description">毎週水曜日はノー残業デーを実施しています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">年間休日日数</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/annual-holiday-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/annual-holiday-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">125<span>日</span></div>
+            </div>
+            <p class="p-infog__description">土日祝日休みの他、<br class="u-br--lg">記念日休暇などを設けています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">有給取得率</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/paid-holiday-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/paid-holiday-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">82<div class="p-infog__small-number">.5</div><span>%</span></div>
+            </div>
+            <p class="p-infog__description">プライベートとのバランスを大事にしています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">リモートワーク率</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/remote-work-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/remote-work-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">100<span>%</span></div>
+            </div>
+            <p class="p-infog__description">全員が週1～3日の<br class="u-br--lg">リモートワーク日を設けています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">平均勤続年数</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/length-service-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/length-service-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">12<div class="p-infog__small-number">.5</div><span>年</span></div>
+            </div>
+            <p class="p-infog__description">創業から携わったメンバーもいます</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">新卒・中途の割合</h3>
+            <div class="p-infog__content --pie">
+              <div class="p-infog__pie--gender">
+                <div class="p-infog__label">
+                  <p>中途</p>
+                  <p>新卒</p>
+                </div>
+              </div>
+              <div class="p-infog__data--pie">中途<span>47</span>%<br>新卒<span>53</span>%</div>
+            </div>
+            <p class="p-infog__description --pie">中途採用にも積極的に取り組んでいます</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">採用実績数<span> （過去3年間）</span></h3>
+            <div class="p-infog__content --bar">
+              <div class="p-infog__bar-container">
+                <div class="p-infog__bar__data --recruit">7<span>人</span></div>
+                <div class="p-infog__bar --7people"></div>
+                <div class="p-infog__bar__year --recruit">2020</div>
+              </div>
+              <div class="p-infog__bar-container">
+                <div class="p-infog__bar__data --recruit">10<span>人</span></div>
+                <div class="p-infog__bar --10people"></div>
+                <div class="p-infog__bar__year --recruit">2021</div>
+              </div>
+              <div class="p-infog__bar-container">
+                <div class="p-infog__bar__data --recruit--big">14<span>人</span></div>
+                <div class="p-infog__bar --14people"></div>
+                <div class="p-infog__bar__year --recruit">2022</div>
+              </div>
+            </div>
+            <p class="p-infog__description --bar">3年連続で新卒採用を行っています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">離職率</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/turnover-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/turnover-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">8<div class="p-infog__small-number">.5</div><span>％</span></div>
+            </div>
+            <p class="p-infog__description">ほとんどのメンバーは<br class="u-br--lg">3年以上勤めています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">正社員の割合</h3>
+            <div class="p-infog__content --pie">
+              <div class="p-infog__pie--full-time">
+                <div class="p-infog__label --full-time">
+                  <div class="p-infog__label--left">
+                    <p class="p-infog__label--top">その他</p>
+                    <p class="p-infog__label--bottom">契約<br>社員</p>
+                  </div>
+                  <p class="p-infog__label--right">正社員</p>
+                </div>
+              </div>
+              <div class="p-infog__data--pie">正社員<span>50</span>%
+                <div class="p-infog__data--pie --sub">契約社員<span>25</span>%<br class="u-br--lg">　その他<span>25</span>%</div>
+              </div>
+            </div>
+            <p class="p-infog__description --pie">その他には派遣社員や<br class="u-br--lg">アルバイトが含まれています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">管理職の男女比</h3>
+            <div class="p-infog__content --pie">
+              <div class="p-infog__pie--gender">
+                <div class="p-infog__label">
+                  <p>女性</p>
+                  <p>男性</p>
+                </div>
+              </div>
+              <div class="p-infog__data--pie">男性<span>47</span>%<br>女性<span>53</span>%</div>
+            </div>
+            <p class="p-infog__description --pie">女性管理職には約X名在籍しています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">育休取得率</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/childcare-leave-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/childcare-leave-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">80<div class="p-infog__small-number">.5</div><span>%</span></div>
+            </div>
+            <p class="p-infog__description">積極的な育休制度を推奨しています</p>
+          </div>
+          <div class="p-infog__card">
+            <h3 class="p-infog__heading">育休取得後の復職率</h3>
+            <div class="p-infog__content">
+              <picture class="p-infog__icon">
+                <source srcset="<%- rootPath %>/assets/img/infographics/reinstatement-icon.webp" type="image/webp">
+                <img src="<%- rootPath %>/assets/img/infographics/reinstatement-icon.png" alt="">
+              </picture>
+              <div class="p-infog__data">78<div class="p-infog__small-number">.9</div><span>%</span></div>
+            </div>
+            <p class="p-infog__description">子供がいる社員も多く、<br class="u-br--lg">復職後も活躍しています</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include("../_components/_recruit", { rootPath, pageData }) _%>
+<%- include("../_components/_footer", { rootPath, pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

@@ -6,8 +6,33 @@
 @use "foundation/reset";
 @use "foundation/base";
 
+//vendor
+@use "vendor/slick-theme";
+
 // Layout
 @use "layout/header";
 @use "layout/footer";
+@use "layout/recruit";
+@use "layout/section";
 
 // Object
+@use "object/component/heading";
+@use "object/component/text";
+@use "object/component/button";
+@use "object/component/decoration";
+@use "object/component/loer-hero";
+@use "object/component/breadcrumbs";
+@use "object/component/table";
+
+@use "object/project/index-mv";
+@use "object/project/index-recruit-message";
+@use "object/project/index-top-message";
+@use "object/project/index-business";
+@use "object/project/index-employee";
+@use "object/project/index-section";
+@use "object/project/infog";
+@use "object/project/topmessage";
+@use "object/project/company";
+
+@use "object/utility/width";
+@use "object/utility/br";

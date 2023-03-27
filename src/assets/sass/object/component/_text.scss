@@ -1,0 +1,27 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-text {
+  color: $color-base;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.2;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: $z-contents;
+  @include mq {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.9;
+  }
+  & + & {
+    padding-top: 40px;
+    @include mq {
+      padding-top: 10px;
+    }
+  }
+  &.--white {
+    color: white;
+  }
+}

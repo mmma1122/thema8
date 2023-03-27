@@ -1,0 +1,80 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.topmessage;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { rootPath, pageData }) _%>
+  <main>
+    <div class="c-lower-hero">
+      <div class="c-lower-hero__inner u-width--04">
+        <div class="c-decoration--left --lower-hero"></div>
+        <h1 class="c-lower-hero__heading">
+          <div class="c-lower-hero__heading__ja">代表メッセージ</div>
+          <div class="c-lower-hero__heading__en">TOP<br class="u-br--lg"> MESSAGE</div>
+        </h1>
+        <picture class="c-lower-hero__image">
+          <div class="c-lower-hero__decoration"></div>
+          <source srcset="<%- rootPath %>/assets/img/topmessage/hero.webp" type="image/webp">
+          <img src="<%- rootPath %>/assets/img/topmessage/hero.png" alt="">
+        </picture>
+      </div>
+    </div>
+
+    <nav>
+      <ol class="c-breadcrumbs">
+        <li class="c-breadcrumbs__list"><a href="<%- rootPath %>/">ホーム</a></li>
+        <li class="c-breadcrumbs__list">代表メッセージ</li>
+      </ol>
+    </nav>
+
+    <section class="l-section --white">
+      <div class="l-secton__inner u-width--03">
+        <h2 class="c-heading --center">
+          マイナビワークス。<br>
+          それは生きるうえでの <br class="u-br--lg">「場」 でありたい。
+        </h2>
+        <p class="c-text">
+          こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+          こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+        </p>
+      </div>
+    </section>
+
+    <section class="p-topmessage l-section">
+      <div class="p-topmessage__inner l-section__inner">
+        <div class="p-topmessage__content">
+          <h2 class="c-heading --white">
+            マイナビワークス。<br>
+            それは生きるうえでの<br>場でありたい。
+          </h2>
+          <p class="c-text --white">
+            こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+            こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+          </p>
+          <p class="c-text --white">こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+            こちらにテキストが入りますこちらにテキストがはいります。
+          </p>
+        </div>
+        <picture class="p-topmessage__image">
+          <source srcset="<%- rootPath %>/assets/img/topmessage/representative.webp" type="image/webp">
+          <img src="<%- rootPath %>/assets/img/topmessage/representative.png" alt="">
+        </picture>
+      </div>
+      <div class="c-decoration--left --bottom"></div>
+    </section>
+
+    <section class="l-section u-width--03">
+      <div class="l-section_inner">
+        <p class="c-text">こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。<br>
+          こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。こちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいりますこちらにテキストが入りますこちらにテキストがはいります。
+        </p>
+        <p class="p-topmessage__personal">
+          <div class="p-topmessage__department">代表取締役社長</div>
+          <div class="p-topmessage__name">山田 太郎</div>
+        </p>
+      </div>
+    </section>
+  </main>
+  <%- include("../_components/_recruit", { rootPath, pageData }) _%>
+<%- include("../_components/_footer", { rootPath, pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

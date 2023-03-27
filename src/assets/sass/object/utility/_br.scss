@@ -1,0 +1,11 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.u-br {
+  &--lg {
+    display: none;
+    @include mq {
+      display: initial;
+    }
+  }
+}

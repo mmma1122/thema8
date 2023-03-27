@@ -1,0 +1,124 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-employee {
+  @include mq {
+    button.c-button {
+      margin-left: calc(10px + 23.5px);
+    }
+  }
+  &__content {
+    padding-bottom: 110px;
+    color: $color-main;
+    text-align: center;
+    @include mq {
+      padding: 0 0 75px;
+      & .c-text {
+        text-align: left;
+      }
+    }
+  }
+  &__heading {
+    padding-bottom: 30px;
+  }
+  &__carousel {
+    display: flex;
+    justify-content: left;
+    border-top: 15px solid $color-main;
+  }
+  &__card {
+    padding-bottom: 7.7vw;
+    position: relative;
+    overflow: hidden;
+    @include mq {
+      padding-bottom: 100px;
+    }
+    img {
+      width: 23.4vw;
+      height: 23.4vw;
+      object-fit: cover;
+      object-position: center center;
+      transition-duration: 0.5s;
+      &:hover {
+        filter: brightness(1.25);
+      }
+      @include mq {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__personal {
+    width: 15.36vw;
+    height: 15.36vw;
+    background-color: $color-main;
+    border: 5px solid white;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include mq {
+      width: 200px;
+      height: 200px;
+    }
+    &::before {
+      content: attr(data-num);
+      width: 3.85416vw;
+      height: 3.85416vw;
+      background-color: white;
+      border-radius: 100%;
+      color: $color-main;
+      font-size: 1.66vw;
+      font-weight: bold;
+      line-height: 3.85vw;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 8px;
+      @include mq {
+        width: 50px;
+        height: 50px;
+        font-size: 2.5rem;
+        line-height: 50px;
+        top: -8px;
+        right: 8px;
+      }
+    }
+  }
+  &__name {
+    width: 8.23vw;
+    margin: 0 auto;
+    padding: 2.9vw 0 0.46vw;
+    font-size: 1.666666666666667vw;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid white;
+    span {
+      font-size: 1.04vw;
+      font-weight: bold;
+    }
+    @include mq {
+      width: 130px;
+      padding: 36px 0 10px;
+      line-height: 01;
+      font-size: 2.4rem;
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &__department {
+    padding-top: 0.73vw;
+    font-size: 0.8333333333333333vw;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    @include mq {
+      padding-top: 10px;
+      font-size: 1.2rem;
+    }
+  }
+}

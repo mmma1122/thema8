@@ -1,0 +1,188 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-decoration {
+  &--left {
+    display: block;
+    width: 12.7vw;
+    height: 12.7vw;
+    border-radius: 100%;
+    background-color: $color-accent-yellow;
+    position: absolute;
+    z-index: $z-bg;
+    @include mq {
+      width: 21.2vw;
+      height: 21.2vw;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 2.5vw;
+      height: 2.5vw;
+      border-radius: 100%;
+      background-color: white;
+      position: absolute;
+      top: -0.36vw;
+      left: -0.57vw;
+      @include mq {
+        width: 4.133vw;
+        height: 4.133vw;
+        top: -0.86vw;
+        left: -3vw;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 4.53vw;
+      height: 4.53vw;
+      border-radius: 100%;
+      background-color: $color-sub;
+      position: absolute;
+      right: -1.68vw;
+      bottom: 0.88vw;
+      @include mq {
+        width: 7.6vw;
+        height: 7.6vw;
+        right: -2.826vw;
+        bottom: 1.46vw;
+      }
+    }
+
+    &.--index-recruit-message {
+      &::after {
+        display: none;
+      }
+      top: 11.3vw;
+      left: 13.7vw;
+      @include mq {
+        width: 17.6vw;
+        height: 17.6vw;
+        top: 15.746vw;
+        left: 2.493vw;
+        &::before {
+          width: 3.46vw;
+          height: 3.46vw;
+          top: -0.72vw;
+          left: -2.493vw;
+        }
+      }
+    }
+    &.--index-business {
+      z-index: 3;
+      top: 3.8vw;
+      left: 7.96vw;
+      @include mq {
+        top: 15.69vw;
+        left: 7vw;
+      }
+    }
+    &.--index-section {
+      z-index: 3;
+      bottom: -6.614vw;
+      left: 7.96vw;
+      @include mq {
+        bottom: -10.53vw;
+        left: 7vw;
+      }
+    }
+    &.--lower-hero {
+      top: 38px;
+      left: -66px;
+      &::before {
+        top: -0.521vw;
+        left: -1.895vw;
+      }
+
+      @include mq {
+        width: 32.5vw;
+        height: 32.5vw;
+        top: 6.4vw;
+        left: auto;
+        right: 6.98vw;
+        &::before {
+          width: 6.39vw;
+          height: 6.39vw;
+          top: -1.33vw;
+          left: -4.61vw;
+        }
+        &::after {
+          width: 11.66vw;
+          height: 11.66vw;
+          right: -3.42vw;
+          bottom: 2.25vw;
+        }
+      }
+    }
+    &.--bottom {
+      bottom: -127px;
+      left: 160px;
+      @include mq {
+        bottom: -10.97vw;
+        left: 7vw;
+      }
+    }
+  }
+  &--right {
+    display: block;
+    width: 11vw;
+    height: 11vw;
+    border-radius: 100%;
+    background-color: $color-accent-yellow;
+    position: absolute;
+    @include mq {
+      width: 16.9vw;
+      height: 16.89vw;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 3.95vw;
+      height: 3.95vw;
+      border-radius: 100%;
+      background-color: $color-sub;
+      position: absolute;
+      top: -0.88vw;
+      left: -0.99vw;
+      @include mq {
+        width: 6.05vw;
+        height: 6.05vw;
+        top: -0.52vw;
+        left: -0.733vw;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 2.18vw;
+      height: 2.18vw;
+      border-radius: 100%;
+      background-color: $color-main;
+      position: absolute;
+      right: -1.82vw;
+      bottom: 0.31vw;
+      @include mq {
+        width: 3.32vw;
+        height: 3.32vw;
+        right: -2.33vw;
+        bottom: 0.96vw;
+      }
+    }
+    &.--index-recruit-message {
+      bottom: -5.31vw;
+      right: 6.61vw;
+      @include mq {
+        right: 6.66vw;
+        bottom: -8.4vw;
+      }
+    }
+    &.--index-section {
+      top: 4.79vw;
+      right: 6.61vw;
+      @include mq {
+        right: 25px;
+        top: 067px;
+      }
+    }
+  }
+}

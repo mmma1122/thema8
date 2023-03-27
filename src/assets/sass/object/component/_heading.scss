@@ -1,0 +1,64 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.c-index-heading {
+  padding-bottom: 2.18vw;
+  text-align: left;
+  @include mq {
+    padding: 0 10px 20px;
+    line-height: normal;
+  }
+  &--en {
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 3;
+    @include mq {
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+    &.--recruit-message {
+      letter-spacing: 0.05em;
+      @include mq {
+        font-size: 3.7rem;
+        line-height: normal;
+      }
+    }
+  }
+  &--jp {
+    font-size: 3.4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    @include mq {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.c-heading {
+  color: $color-main;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  @include mq {
+    padding-left: 10px;
+    font-size: 2.7rem;
+  }
+  &.--center {
+    padding-left: 0;
+    text-align: center;
+  }
+  & + .c-text {
+    padding-top: 40px;
+    @include mq {
+      padding-top: 20px;
+    }
+  }
+  &.--white {
+    color: white;
+  }
+}

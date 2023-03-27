@@ -5,4 +5,24 @@ $breakpoints: (
   xl: 1280px,
   xxl: 1536px,
 );
+
+$line-width01: 10.9375vw;
+$line-width02: 18.75vw;
+$line-width03: 62.5vw;
+$line-width04: 78.125vw;
+$line-width05: 89.0625vw;
+
+// colors
+$color-main: #ff7e00;
+$color-sub: #0f7ddc;
+$color-accent-yellow: #ffd016;
+$color-base: #444444;
+$color-black: #161616;
+$color-lightgray: #fffcf1;
+
 $escaped-characters: (("<", "%3c"), (">", "%3e"), ("#", "%23"), ("(", "%28"), (")", "%29"));
+
+// z-index
+$z-bg: 1;
+$z-contents: 2;
+$z-header: 1000;

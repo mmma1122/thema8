@@ -1,0 +1,37 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.u-width {
+  margin: 0 auto;
+  @include mq {
+    width: 100%;
+  }
+  &--03 {
+    @extend .u-width;
+    width: $line-width03;
+    @include mq {
+      width: 100%;
+    }
+  }
+  &--04 {
+    @extend .u-width;
+    width: $line-width04;
+    @include mq {
+      width: 100%;
+    }
+  }
+  &--05 {
+    // @extend .u-width;
+    width: $line-width05;
+    @include mq {
+      width: 100%;
+    }
+  }
+  &--full {
+    @extend .u-width;
+    width: 100%;
+    @include mq {
+      width: 100%;
+    }
+  }
+}

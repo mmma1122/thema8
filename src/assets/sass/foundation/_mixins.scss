@@ -2,12 +2,20 @@
 
 // Media Queries
 
-@mixin mq($breakpoint: md, $rule: min, $subtraction: false) {
+@mixin mq($breakpoint: lg, $rule: max, $subtraction: false) {
   $breakpoint: map-get(variables.$breakpoints, $breakpoint);
   @if $rule == max and $subtraction {
     $breakpoint: $breakpoint - 0.2;
   }
   @media (#{$rule}-width: $breakpoint) {
     @content;
+  }
+}
+
+@mixin hover() {
+  @include mq(lg, min) {
+    &:hover {
+      @content;
+    }
   }
 }

@@ -1,8 +1,11 @@
 {
+  "env": {
+    "rootPath": ""
+  },
   "home": {
     "meta": {
       "robots": "index, follow",
-      "title": "ホーム",
+      "title": "株式会社マイナビワークス - 採用サイト - テーマ8",
       "description": "",
       "og": {
         "type": "website",
@@ -10,7 +13,76 @@
         "description": "",
         "url": "",
         "image": "",
-        "siteName": ""
+        "siteName": "株式会社マイナビワークス - 採用サイト - テーマ8"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": ""
+      },
+      "fb": {
+        "appID": ""
+      },
+      "canonical": ""
+    }
+  },
+  "topmessage": {
+    "meta": {
+      "robots": "index, follow",
+      "title": "代表メッセージ | 株式会社マイナビワークス - 採用サイト - テーマ8",
+      "description": "株式会社マイナビワークスの採用サイト「代表メッセージ」のページです。当社代表より、みなさんへ向けたメッセージをご紹介します。",
+      "og": {
+        "type": "website",
+        "title": "代表メッセージ | 株式会社マイナビワークス - 採用サイト - テーマ8",
+        "description": "株式会社マイナビワークスの採用サイト「代表メッセージ」のページです。当社代表より、みなさんへ向けたメッセージをご紹介します。",
+        "url": "",
+        "image": "",
+        "siteName": "株式会社マイナビワークス - 採用サイト - テーマ8"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": ""
+      },
+      "fb": {
+        "appID": ""
+      },
+      "canonical": ""
+    }
+  },
+  "company": {
+    "meta": {
+      "robots": "index, follow",
+      "title": "企業概要 | 株式会社マイナビワークス - 採用サイト - テーマ8",
+      "description": "株式会社マイナビワークスの採用サイト「企業概要」のページです。当社の企業情報をご紹介します。",
+      "og": {
+        "type": "website",
+        "title": "企業概要 | 株式会社マイナビワークス - 採用サイト - テーマ8",
+        "description": "株式会社マイナビワークスの採用サイト「企業概要」のページです。当社の企業情報をご紹介します。",
+        "url": "",
+        "image": "",
+        "siteName": "株式会社マイナビワークス - 採用サイト - テーマ8"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": ""
+      },
+      "fb": {
+        "appID": ""
+      },
+      "canonical": ""
+    }
+  },
+  "infographics": {
+    "meta": {
+      "robots": "index, follow",
+      "title": "数字で見る | 株式会社マイナビワークス - 採用サイト - テーマ8",
+      "description": "株式会社マイナビワークスの採用サイト「数字で見る」のページです。当社の情報をさまざまな数字よりご紹介します。",
+      "og": {
+        "type": "website",
+        "title": "数字で見る | 株式会社マイナビワークス - 採用サイト - テーマ8",
+        "description": "株式会社マイナビワークスの採用サイト「数字で見る」のページです。当社の情報をさまざまな数字よりご紹介します。",
+        "url": "",
+        "image": "",
+        "siteName": "株式会社マイナビワークス - 採用サイト - テーマ8"
       },
       "twitter": {
         "card": "summary_large_image",

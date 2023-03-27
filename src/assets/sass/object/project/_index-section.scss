@@ -1,0 +1,91 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-section {
+  padding: 10.42vw 0;
+  color: $color-main;
+  @include mq {
+    padding: 100px 0;
+  }
+  & .l-section {
+    overflow: inherit;
+  }
+  &__content {
+    width: 100%;
+    height: 34.89vw;
+    position: relative;
+    top: 0;
+    right: 0;
+    @include mq {
+      height: auto;
+    }
+  }
+  &__text {
+    width: 34.11vw;
+    position: relative;
+    left: 0px;
+    @include mq {
+      width: 100%;
+      padding: 0 0 30px;
+    }
+    &.--orange {
+      width: 32.03vw;
+      left: 46.77083333333333vw;
+      @include mq {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+  &__image {
+    font-size: 0;
+    img {
+      width: 50.78vw;
+      height: 34.89vw;
+      object-fit: cover;
+      object-position: center center;
+      border: 10px solid $color-main;
+      border-radius: 40px 0 0 40px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include mq {
+        display: block;
+        width: calc(100% - 10px);
+        height: auto;
+        border: 8px solid $color-main;
+        border-radius: 20px 0 0 20px;
+        position: relative;
+        left: 10px;
+      }
+    }
+    &.--orange img {
+      font-size: 0;
+      border-radius: 0 40px 40px 0;
+      border: 10px solid white;
+      box-sizing: border-box;
+      left: 0;
+      @include mq {
+        border: 8px solid white;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+  &--orange {
+    @extend .p-index-section;
+    padding: 7.8vw 0;
+    background-color: $color-main;
+    color: white;
+    @include mq {
+      padding: 75px 0;
+    }
+  }
+  &__button {
+    position: relative;
+    left: 46.77083333333333vw;
+    @include mq {
+      left: 0;
+    }
+  }
+}

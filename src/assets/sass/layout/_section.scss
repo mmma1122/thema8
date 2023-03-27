@@ -1,0 +1,20 @@
+@use "../foundation/mixins" as *;
+@use "../foundation/variables" as *;
+
+.l-section {
+  width: 100%;
+  // overflow-x: hidden;
+  padding-top: 10.4vw;
+  position: relative;
+  z-index: $z-bg;
+  @include mq {
+    padding-top: 100px;
+  }
+  &__inner {
+    position: relative;
+    z-index: $z-contents;
+  }
+  &.--white {
+    background-color: white;
+  }
+}

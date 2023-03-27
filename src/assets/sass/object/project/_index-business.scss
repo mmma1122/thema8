@@ -1,0 +1,93 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-business {
+  padding-bottom: 286px;
+  @include mq {
+    padding-bottom: 0;
+    & .c-button {
+      margin-left: 5.33vw;
+    }
+  }
+  &__content {
+    padding: 150px $line-width01 11.5vw;
+    color: white;
+    text-align: center;
+    background-color: $color-main;
+    position: relative;
+    @include mq {
+      padding: 75px 0 155px;
+      & .c-text {
+        text-align: left;
+      }
+    }
+  }
+  &__heading {
+    padding-bottom: 20px;
+  }
+  &__content--list {
+    position: absolute;
+    bottom: -295px;
+    left: $line-width02;
+    z-index: 3;
+    @include mq {
+      width: fit-content;
+      position: relative;
+      bottom: 135px;
+      left: 10px;
+      margin-bottom: -135px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: $line-width03;
+    margin: 0 auto;
+    @include mq {
+      display: block;
+      width: fit-content;
+      overflow: hidden;
+      position: relative;
+      left: 14.6vw;
+      margin: 0;
+    }
+  }
+  &__list__item {
+    @include mq {
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+        width: fit-content;
+      }
+    }
+    a {
+      display: block;
+      width: 17.8125vw;
+      height: 17.8125vw;
+      padding-top: 7.552vw;
+      color: $color-main;
+      font-size: 1.77vw;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      border: 6px solid $color-main;
+      border-radius: 100%;
+      background-color: white;
+      @include mq {
+        width: 65.33vw;
+        height: 65.33vw;
+        padding-top: 24.13vw;
+        font-size: 6.6vw;
+        border: 5px solid $color-main;
+      }
+      span {
+        font-size: 1.04vw;
+        font-weight: bold;
+        @include mq {
+          font-size: 4.53vw;
+        }
+      }
+    }
+  }
+}

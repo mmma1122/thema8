@@ -1,0 +1,29 @@
+@use "../../foundation/mixins" as *;
+@use "../../foundation/variables" as *;
+
+.p-index-recruit-message {
+  padding: 325px 0 190px;
+  color: white;
+  background: $color-main;
+  border-radius: 200px 0 0 0;
+  position: relative;
+  @include mq {
+    padding: 18.7vw 8vw 20vw;
+    border-radius: 50px 0 0 0;
+  }
+  &__inner {
+    position: relative;
+    z-index: $z-contents;
+  }
+  &__content {
+    padding-top: 40px;
+    font-size: 2.2rem;
+    line-height: 2.8;
+    letter-spacing: 0.1em;
+    @include mq(lg) {
+      padding-top: 15px;
+      font-size: 1.5rem;
+      line-height: 2;
+    }
+  }
+}

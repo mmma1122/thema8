@@ -1,0 +1,223 @@
+@use "../foundation/mixins" as *;
+@use "../foundation/variables" as *;
+
+.l-recruit {
+  margin-top: 23.28vw;
+  position: relative;
+  @include mq {
+    margin-top: 276px;
+  }
+  &__requirements {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.8vw 4.4vw 3.4vw 3.2vw;
+    background-color: $color-main;
+    border: 10px solid white;
+    border-radius: 30px;
+    position: absolute;
+    top: -10.3125vw;
+    left: $line-width02;
+    @include mq {
+      display: block;
+      padding: 41px 0 46px;
+      border: 7px solid white;
+      box-sizing: border-box;
+      top: -150px;
+      left: 30px;
+      &.u-width--03 {
+        width: calc(100% - 60px);
+      }
+    }
+  }
+  &__requirements__title {
+    align-self: center;
+    color: white;
+    font-size: 4.6875vw;
+    font-weight: 700;
+    @include mq {
+      padding-bottom: 20px;
+      font-size: 4.5rem;
+      text-align: center;
+      line-height: normal;
+    }
+  }
+  &__requirements__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+    @include mq {
+      row-gap: 20px;
+    }
+  }
+  &__link {
+    display: block;
+    width: 26.25vw;
+    padding: 25px 0 25px 3.125vw;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    line-height: normal;
+    border: 5px solid white;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.3s;
+    span {
+      display: block;
+      width: 79px;
+      height: 79px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      right: -25px;
+      translate: 0 -50% 0;
+    }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-top: 3px solid $color-main;
+      border-right: 3px solid $color-main;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 3;
+      transition: all 0.3s;
+    }
+    &::before {
+      transform: translateX(0px) translateY(-65%) rotate(45deg);
+    }
+    &::after {
+      transform: translateX(-12px) translateY(-65%) rotate(45deg);
+    }
+    &:hover {
+      color: $color-main;
+      background-color: white;
+      span {
+        background-color: $color-main;
+        border: 3px solid white;
+      }
+      &::before,
+      &::after {
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        transform: translateX(-6px) translateY(-65%) rotate(45deg);
+      }
+    }
+    @include mq {
+      width: 68.13333333333333vw;
+      margin-left: 20px;
+      padding: 15px 0 14px 25px;
+      font-size: 1.8rem;
+      letter-spacing: 0.1em;
+      border: 4px solid white;
+      span {
+        width: 47px;
+        height: 47px;
+        right: -20px;
+      }
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid $color-main;
+        border-right: 2px solid $color-main;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 3;
+      }
+      &::before {
+        transform: translateX(-3px) translateY(-50%) rotate(45deg);
+      }
+      &::after {
+        transform: translateX(5px) translateY(-50%) rotate(45deg);
+      }
+      &:hover {
+        &::before,
+        &::after {
+          border-top: 2px solid white;
+          border-right: 2px solid white;
+          transform: translateX(1px) translateY(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+  &__link--entry {
+    display: block;
+    width: 100%;
+    padding: 285px 0 110px;
+    color: white;
+    font-size: 5.729166666666667vw;
+    text-align: center;
+    letter-spacing: 0.1em;
+    background-color: $color-sub;
+    transition: all 0.3s;
+    &:hover {
+      letter-spacing: 0.3em;
+      span {
+        &::before,
+        &::after {
+          right: -5%;
+        }
+      }
+    }
+    span {
+      padding-right: 5.2vw;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 2.5vw;
+        height: 2.5vw;
+        border-top: 9px solid white;
+        border-right: 9px solid white;
+        position: absolute;
+        top: 35%;
+        right: 0%;
+        z-index: 3;
+        transition: all 0.3s;
+      }
+      &::before {
+        transform: translateX(0px) translateY(0) rotate(45deg);
+      }
+      &::after {
+        transform: translateX(40px) translateY(0) rotate(45deg);
+      }
+    }
+
+    @include mq {
+      font-size: 5.5rem;
+      line-height: 1;
+      padding: 205px 0 60px;
+      span {
+        display: block;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+        text-align: left;
+        padding-right: 0;
+        &::before,
+        &::after {
+          width: 24px;
+          height: 24px;
+          border-top: 4px solid white;
+          border-right: 4px solid white;
+          top: 50%;
+          right: 0%;
+        }
+        &::before {
+          transform: translateX(0px) translateY(-50%) rotate(45deg);
+        }
+        &::after {
+          transform: translateX(-20px) translateY(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}
